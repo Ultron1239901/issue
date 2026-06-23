@@ -1,0 +1,12 @@
+name: Python CI
+on:
+  push:
+jobs:
+  build:
+      runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v4
+        - name: Print Message
+         run: echo "GitHub Actions is working!"
+         
